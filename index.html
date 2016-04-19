@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>CLPGA晚装女王</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body class="bkgray">
+		<div class="wrap">
+			<div class="banner-box pr">
+				<ul id="banner-ul" class="banner-nr">
+					<li><img src="images/banner1.jpg" class="img-responsive"></li>
+					<li><img src="images/banner2.jpg" class="img-responsive"></li>
+					<li><img src="images/banner3.jpg" class="img-responsive"></li>
+					<li><img src="images/banner4.jpg" class="img-responsive"></li>
+				</ul>
+				<ul class="banner-dian pa" id="banner-dian">
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="top-three clearfix">
+				<ul>
+					<li class="clearfix">
+						<div class="col-xs-2">
+							<a href="#?1"><img src="images/one.png" class="sort"></a>
+						</div>
+						<div class="col-xs-2">
+							<a href="#?1"><img src="images/img01.jpg"></a>
+						</div>
+						<div class="col-xs-4 a-href" data-location-href="#?1">
+							<h2>王菲菲</h2>
+							<p>得票数：1888</p>
+						</div>
+						<div class="col-xs-4">
+							<a href="javascript:void(0)" class="tp vote-btn">投票</a>
+							<a href="player_content.html" class="fx">分享</a>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="col-xs-2">
+							<a href="#?2"><img src="images/two.png" class="sort"></a>
+						</div>
+						<div class="col-xs-2">
+							<a href="#?2"><img src="images/img02.jpg"></a>
+						</div>
+						<div class="col-xs-4 a-href" data-location-href="#?2">
+							<h2>王菲菲</h2>
+							<p>得票数：1888</p>
+						</div>
+						<div class="col-xs-4">
+							<a href="javascript:void(0)" class="tp vote-btn">投票</a>
+							<a href="" class="fx">分享</a>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="col-xs-2">
+							<a href="#?3"><img src="images/three.png" class="sort"></a>
+						</div>
+						<div class="col-xs-2">
+							<a href="#?3"><img src="images/img03.jpg"></a>
+						</div>
+						<div class="col-xs-4 a-href" data-location-href="#?3">
+							<h2>王菲菲</h2>
+							<p>得票数：1888</p>
+						</div>
+						<div class="col-xs-4">
+							<a href="javascript:void(0)" class="tp">投票</a>
+							<a href="" class="fx">分享</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="warter-conter clearfix pr">
+				<div class="water-pull-loading pa" id="water-pull-loading">
+					正在加载中......
+				</div>
+				<div class="col-xs-6 clearfix">
+					<div id="list1" class="list">
+						<img src="images/img04.jpg" class="img-responsive">
+
+					</div>
+					<span id="list-bottom1"></span>
+				</div>
+				<div class="col-xs-6 ">
+					<div id="list2" class="list">
+						<div class="notice-box pr">
+							<span class="iconfont icon-laba pa"></span>
+							<div class="notic-scroll-box pr a-href" data-location-href="">
+								<p class="scroll">我要吃苹果苹果苹果苹果苹果苹果</p>
+							</div>
+						</div>
+
+					</div>
+					<span id="list-bottom2"></span>
+				</div>
+			</div>
+			<div class="blank1" id="bottom-blank"></div>
+
+		</div>
+		<script type="text/javascript" src="js/zeptoandtouch.js"></script>
+		<script type="text/javascript" src="js/CLPGA_ALL.js"></script>
+		<script type="text/javascript">
+  			//banner
+			$.fn.slideBox();
+			//瀑布刘
+			$.fn.fallsFlow();//插入listdata
+			//非a标签的跳转
+			$('.a-href').on('tap',function(){
+				window.location.href=$(this).attr('data-location-href')
+			})
+			
+			//提示
+			var promptmes = new promptMes();
+			//投票按钮事件点击事件
+			$(document).bind('tap','.vote-btn',function(){
+				$(this).removeClass('vote-btn')
+				promptmes.vote.success(9)
+				
+			})
+			
+			
+			
+			
+		</script>
+
+	</body>
+
+</html>
