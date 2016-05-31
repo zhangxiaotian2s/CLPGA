@@ -84,7 +84,7 @@ visibility: hidden;
 h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 
 @font-face {font-family: "iconfont";
-  src: url('../fonts/iconfont.ttf?t=1460431878') format('truetype') /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  src: url('clpga/iconfont.ttf?t=1460431878') format('truetype') /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
 }
 
 .iconfont {
@@ -106,46 +106,52 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 .banner-dian li{ width:0.6rem;  height: 0.6rem; background: #e2dbdf; border-radius: 0.3rem; margin-left: 0.5rem;}
 .banner-dian li.current{ background: #FFFFFF;}
 
-.top-three { padding: 1rem;}
+.top-three { margin: 0rem auto 1rem; border: #E0E0E0 solid 1px; border-radius: 6px;}
+.top-three h1{ height: 2.6rem;   line-height: 2.6rem;  border-bottom:#E0E0E0 solid 1px; text-align: center; font-size:1.2rem ;color: #e00047; font-weight: bold;}
 .top-three ul li{ width: 100%; clear: both; padding: 0.8rem 0px; border-bottom: #e0e0e0 solid 1px;}
 .top-three ul li img{ width: 80%; display: block; }
 .top-three ul li .sort{ width: 56%; margin: auto;}
 .top-three ul li h2{ font-size: 1.2rem; padding-bottom: 0.3rem;}
-.top-three ul li .fx{  display: block; width:3rem; height: 3rem; background: #FF6666; line-height: 3rem; float: right; text-align: center; color: #FFFFFF; border-radius:6px; }
-.top-three ul li .tp{  display: block; width:3rem; height: 3rem; background: #E2DBDF; line-height: 3rem; float: right; text-align: center; color: #000000; border-radius:6px ; margin-left: 1rem; }
+.top-three ul li:last-of-type{ border-bottom: none;}
+.top-three ul li .fx{  display: block; width:3rem; height: 3rem; background: #e00047; line-height: 3rem; float: right; text-align: center; color: #FFFFFF; border-radius:6px; margin-right: 1rem;}
+.top-three ul li .tp{  display: block; width:3rem; height: 3rem; background: #E2DBDF; line-height: 3rem; float: right; text-align: center; color: #000000; border-radius:6px ;  margin-right: 1rem; }
 .top-three ul li .vote-btn{ background: #FFB446 ; color: #FFFFFF;}
 .rank-num{ line-height: 3rem; text-align: center; font-size: 1.6rem;}
 
-
 .warter-conter{width: 92%; margin: auto;}
 .warter-conter .col-xs-6  div.list{ padding-right:0.5rem; }
+
+
+
+.notice-box{ width: 96%; border: #e0e0e0 solid 1px; padding: 0.2rem 0px; border-radius: 5px;  overflow: hidden; height: 1.5rem; margin: auto; }
+.notice-box span.iconfont{ color: #ff6666; display: block; float:left; height: 0.8rem; height: 0.8rem;  font-size: 1.1rem; margin-top:0rem; margin-left:0.5rem;}
+.notice-box  p{ width: auto;white-space:nowrap; overflow: hidden; left: 2rem; line-height: 1.6rem; height:1.6rem;left:0px; }
+.notic-scroll-left{ float:left; line-height:1.6rem; color:#ff6666;}
+.notic-scroll-box{ float: right; margin-left: 0.2rem; width: 90%; overflow: hidden; padding-top: 0rem; height:2rem; }
+
+.waterone{ width: 100%; border: #e0e0e0 solid 1px; box-sizing: border-box; border-radius: 5px; overflow: hidden; margin-bottom: 1rem;}
 .warter-conter .col-xs-6:last-of-type div.list{padding-left:0.5rem; padding-right: 0px; }
 
-.notice-box{ width: 100%; border: #e0e0e0 solid 1px; padding: 0.2rem 0px; border-radius: 5px;  overflow: hidden; height: 1.5rem;}
-.notice-box span.iconfont{ color: #ff6666; display: block; height: 0.8rem; height: 0.8rem;  font-size: 1.1rem; top: 0.4rem; left: 0.5rem;}
-.notice-box  p{ width: 30rem; overflow: hidden; left: 2rem; line-height: 1.6rem;  }
-.notic-scroll-box{ float: left; margin-left: 2rem; width: 80%; overflow: hidden; padding-top: 0rem;}
 
-.waterone{ width: 100%; border: #e0e0e0 solid 1px; box-sizing: border-box; border-radius: 5px; overflow: hidden; margin-top: 1rem;}
-
-.water-img-box-mes{ height: 2.6rem; line-height: 2.6rem; background:url(../images/bk60.png) ; width: 100%; bottom: 0px; left: 0px; color: #FFFFFF;}
+.water-img-box-mes{ height: 2.6rem; line-height: 2.6rem; background:image-url("clpga/bk60.png") ; width: 100%; bottom: 0px; left: 0px; color: #FFFFFF;}
 .water-img-box-mes span{ float:left; margin-left: 0.5rem;}
 .water-img-box-mes p{ float: right;}
 .water-img-box-mes p strong{ font-size: 1.3rem; font-weight: normal; margin-right: 0.5rem;}
 
 .waterone h3{ font-size: 1.2rem; text-indent: 0.5rem; margin-top: 0.3rem;}
 .water-img-des{ width: 92%; height: 2.4rem; line-height: 1.2rem; margin: auto; overflow: hidden;font-size: 0.9rem;}
+.water-img-des-bk{ background:image-url("clpga/textbk.png"); background-size:100% 100%; top:0px; left:0px; width:100%; height:100%;}
 
 .water-img-bottom{ border-top: #E0E0E0 solid 1px; margin-top: 0.2rem; width: 100%;}
 .inapp .share-box{ float: left; width: 25%;  text-align: center; font-size: 0.8rem; line-height: 1.2rem; }
 .inapp .share-box a{color: #000;}
 .inapp .share-box a span{ color: #FF6666; display: block; margin:0.3rem auto 0px;}
 
- .water-img-voting a{display: block; background: #aeaeae; text-align: center; width: 80%; margin:0.3rem auto; height: 2.2rem;  line-height: 2.2rem; border-radius:6px; color: #000000;}
-  .water-img-voting a.vote-btn{ background: #FFB446; color: #FFFFFF;}
+ .water-img-voting a{display: block; background: #aeaeae; text-align: center; width: 80%; margin:0.3rem auto; height: 2.2rem;  line-height: 2.2rem; border-radius:6px; color: #ffffff;}
+ .water-img-voting a.vote-btn{ background: #e00047; color: #FFFFFF;}
 .inapp .water-img-voting{ float: left; width:75%;box-sizing: border-box;border-left: #E0E0E0 solid 1px;}
 
-.prompt-box{ width: 80%; max-width: 560px; background:url(../images/bk60.png);  height: 10rem; top: 12rem;left: 10%; border-radius: 6px;}
+.prompt-box{ width: 80%; max-width: 560px; background:image-url("clpga/bk60.png");  height: 10rem; top: 12rem;left: 10%; border-radius: 6px;}
 .back-prompt-p{text-align: center; font-size: 1.4rem; color: #FFFFFF; line-height: 4.0rem; padding-top:2.5rem;}
 .back-prompt-p span{ font-size: 1.6rem; color: #FF6666;}
 .prompt-p{text-align: center; color: #FF6666;}
@@ -186,14 +192,29 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 
 
 .player-fixed-bottom{ width: 100%; max-width: 640px; bottom: 0px; margin: auto; background: #FFFFFF; z-index: 102;}
-.player-fixed-bottom img{ display: block; margin: 0.5rem auto;}
+.player-fixed-bottom img{ display: block; width:100%;}
 
 .player-fixed-bottom .fixed-vote-btn{ background:#AEAEAE; color:#000000 ; height: 100%;text-align: center;}
 .player-fixed-bottom .fixed-vote-btn span{ font-size: 1.2rem; display: block;text-align: center; line-height: 1.8rem;}
-.player-fixed-bottom .vote-btn{ background: #FFB446; color: #FFFFFF;}
+.player-fixed-bottom .vote-btn{ background: #e00047; color: #FFFFFF;}
 
 .big-img-box{ width: 100%;  height:100%; background: #000000; top: 0px;  left: 0px; max-width: 640px; z-index: 10000;}
 .big-img-box img{  max-height: 100%;}
+
+.vote-parent strong{ font-weight:normal;}
+
+.new-top-three .img-head-mes{border: #e0e0e0 solid 1px; border-radius: 3px; width: 90%;  margin:0.4rem auto  0rem; background:#FFFFFF;}
+.new-top-three .img-head-mes img.img-head{ display: block; width: 90%; margin: 0.4rem auto;}
+.new-top-three .img-head-mes .top-three-num{ width: 100%; height: 2rem; background: url(../images/bk60.png); bottom: 0px; line-height: 2rem; line-height: 2rem; text-align: right; color: #FFFFFF; }
+.new-top-three .img-head-mes .top-three-num strong{ padding-right: 0.5rem; font-size: 1.2rem; font-weight: normal;}
+.top-three-name { overflow: hidden; height: 2rem; line-height: 2rem; font-size: 1.3rem; text-align: right; padding: 0px 0.5rem; color: #000000;}
+.top-three-name img{ width: 1.3rem; float: left; display: block; }
+.new-top-three-p{ font-size: 1.2rem;  padding-left: 0.5rem;}
+.end-two-box .img-head-mes{ width: 80%; margin:0.8rem  auto 0rem;}
+.new-top-three .vote-a{ display: block; background: #aeaeae; text-align: center; width: 80%; margin:auto; height: 2.2rem;  line-height: 2.2rem; border-radius:6px; color: #ffffff;  bottom: 0px; left: 10%;}
+.new-top-three .vote-btn{ background: #e00047 ; color: #FFFFFF; }
+.new-top-three .blank2{ background: url(../images/new_top_three_bk.jpg) no-repeat center top; background-size: 90%;}
+.new-top-three table td{ height: 100%;}
 .fadeout{
   animation: fadeoutfn 0.2s linear infinite;
  -webkit-animation: fadeoutfn 0.2s linear infinite; 		
@@ -241,8 +262,8 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 	}
 }
 .scroll{
-  animation: scrollfn 10s linear infinite;
- -webkit-animation: scrollfn 10s linear infinite; 	
+  animation: scrollfn 15s linear infinite;
+ -webkit-animation: scrollfn 15s linear infinite; 	
 }
 @-webkit-keyframes scrollfn{
 	0%{

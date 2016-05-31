@@ -128,7 +128,6 @@
 			var _this = this;
 			//当获得了 数据时删除
 			_this.water_pull_loading.remove()
-
 			_this.arrimg = ['http://7xl619.com1.z0.glb.clouddn.com/m1.jpg',
 				'http://7xl619.com1.z0.glb.clouddn.com/m2.jpg',
 				'http://7xl619.com1.z0.glb.clouddn.com/m3.jpg',
@@ -422,7 +421,6 @@
 			touch.on('.show_img', 'doubletap', function(ev) {
 				var _x = -(ev.position.x - _this.win_w / 2),
 					_y = -((ev.position.y - $(window).scrollTop()) - _this.win_h / 2);
-				console.log('translate3d(-' + _x + 'px,-' + _y + 'px,0)')
 				$(this).css({
 					'-webkit-transition': '0.5s  linear',
 					'-webkit-transform': 'scale(2,2) translate3d(' + _x + 'px,' + _y + 'px,0)'
@@ -476,8 +474,8 @@
 //提示操作
 function promptMes(cfg) {
 	var config = {
-		show_time: 1000, //定义显示的时间
-		transition_time: 0.2 //定义消失的动画时间
+		show_time: 1500, //定义显示的时间
+		transition_time: 0.2  
 	};
 	var _this = this;
 	$.extend(true, config, cfg);
